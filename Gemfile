@@ -7,6 +7,17 @@ gem 'rails', '3.1.1'
 
 gem 'sqlite3'
 
+group :development do
+ gem 'rspec-rails'
+ gem 'faker'
+end
+
+group :test do
+ gem 'rspec'
+ gem 'webrat'
+ gem 'factory_girl_rails'
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
