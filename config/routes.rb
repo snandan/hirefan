@@ -1,4 +1,12 @@
 Hirefan::Application.routes.draw do
+  get "landingpage/home"
+
+  get "landingpage/help"
+
+  get "landingpage/contact"
+
+  get "landingpage/about"
+
   resources :organizations
 
   # The priority is based upon order of creation:
@@ -50,7 +58,7 @@ Hirefan::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'organizations#index'
+  root :to => 'landingpage#home'
 
   # See how all your routes lay out with "rake routes"
 
