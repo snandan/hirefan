@@ -3,10 +3,16 @@
 <head>
   <title>Hirefan</title>
   <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag    "bootstrap" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+  <div class="page-header">
+    <p class="span9">HireFan</p>
+    <p class="login"><%= link_to "Sign up!"%></p>
+  </div>
 
 <%= yield %>
 

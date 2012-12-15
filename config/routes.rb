@@ -1,4 +1,6 @@
 Hirefan::Application.routes.draw do
+  resources :employees
+
   get "landingpage/home"
 
   get "landingpage/help"
